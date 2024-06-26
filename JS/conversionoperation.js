@@ -64,7 +64,7 @@ let mainString = str1 + str2
 
 // Some Basic Rule and operation
 
-console.log(1 + "2");
-console.log("1" + 2);
+//console.log(1 + "2");
+//console.log("1" + 2);
 console.log("1" + 2 + 2);
 console.log(1 + 2 + "2");
