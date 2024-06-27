@@ -77,7 +77,7 @@ console.log(anotherinfo);
 /*   
 In datatype-summary there are two type of datatype primitive and non primitve (Referacne)
 
-Stack is used for primitve data tyep where memory allocation give the copy to the other memory call 
+Stack is used for primitve datatype where memory allocation give the copy to the varibale 
 
 heap is used for non primitve datatype where memroy allocation share the orignal copy with both or multiple same call
      
