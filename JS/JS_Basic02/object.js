@@ -43,11 +43,11 @@ JsUser.name = "A waghre"
 
 // Funcationcallin
 JsUser.greeting = function() {
-    console.log("hello ");
+    // console.log("hello ");
 }
 
 JsUser.greetingtwo = function() {
-    console.log(`hello ${this.name} this is my name`);
+    // console.log(`hello ${this.name} this is my name`);
 }
 
 console.log(JsUser.greeting());
