@@ -9,18 +9,18 @@ map.set('Fr', "France")
 map.set('IN', "India")
 
 
-console.log(map);
+// console.log(map);
 
 // get key and key value from above mapusing forof
 
 for (const [key] of map) { // for key 
-    console.log(key);
+    // console.log(key);
 }
 
 
 // get key and value form above Map using forof and we are using destruting of array
 for (const [key, value] of map) {
-    console.log(`This is key:- ${key} and its value is ${value}`);
+    // console.log(`This is key:- ${key} and its value is ${value}`);
 }
 
 
@@ -31,9 +31,12 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-for (const [key, value] of myObject) {
-    console.log(`This is key:- ${key} and its value is ${value}`); // no output
-}
+// for (const [key, value] of myObject) {
+//     //     console.log(`This is key:- ${key} and its value is ${value}`); // no output
+// }
+
+
+
 
 // summary
 
@@ -48,3 +51,23 @@ forin loop to get key as well as value from array and Object......
 
 MAP  :- we can get/ fetch key and value form map using ForOf Loop 
 */
+
+
+// MAP Chainning
+
+const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+// const newnum = myNumers.map((num) => num + 1)
+// console.log(newnum)
+
+// add Map multiple chain
+
+// In chaining method we can used Multiple MAP and filter aslo
+
+const mynum = myNumers
+    .map((num) => { return num * 10 })
+    .map((num) => { return num + 1 })
+    .filter((num) => { return num >= 50 })
+
+console.log(mynum);
