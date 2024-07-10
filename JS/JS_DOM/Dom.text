@@ -89,6 +89,13 @@ use  [Array.from(tempList)] method
 const convertArrayList = Array.from(tempList) // store in veriable 
 
 then we can simply apply forloop etc 
+.
+.
+.
+.
+.
+.
+
 
 
 
