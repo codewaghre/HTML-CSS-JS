@@ -1,0 +1,96 @@
+// Dom Note  
+..
+.
+
+// Refer all Dom.js file for better understanding
+.
+.
+
+// to target id
+document.getElementById('title') 
+
+// to get value of id
+document.getElementById('title').id 
+
+
+// clasname, present in title or id
+document.getElementById('title').className 
+
+
+// setAttribute, is use to change id or class name
+document.getElementById('title').setAttribute('class', 'test')
+
+
+// store in variable "then"
+/*
+ we can acces title easy.
+ add style to the tile 
+ ( In style, used like CSS )
+
+*/
+const title = document.getElementById('title') 
+title.style.backgroundColor= "red"
+.
+.
+.
+.
+
+
+// Diff between innerHTML, textContent and innerText
+
+//In innerHTML, give the all tag, attribute and there name that present in our section
+for example..............
+ Input :- title.innerHTML  
+Output :- DOM learning on Chai aur code <span style="display: none;">test text</s....
+
+
+//In innerContent, give the all value inclidng hidden value aslo
+input ;- title.textContent
+output :-  'DOM learning on Chai aur code test text'
+
+
+// In innerText, give only present and unhide value 
+input :- title.innerText
+output :- 'DOM learning on Chai aur code'
+.
+.
+.
+.
+
+// learn querrySelector()
+document.querySelector('h1') 
+
+It gives the first h1 (it Defult) only that present in same div and
+
+we can use # and . to select id and Class from first h1 only 
+
+//  querrySelector for form tag
+document.querySelector('input[type="password"]')
+.
+.
+.
+.
+
+// learn querrySelectorAll()
+It give nodeList and have simple array.
+.
+.
+.
+
+// learn  getElementsByClassName()
+
+document.getElementsByClassName('list-item')
+
+does not present array so we need to convert into array 
+steps are :- 
+
+store in variable,
+use  [Array.from(tempList)] method
+const convertArrayList = Array.from(tempList) // store in veriable 
+
+then we can simply apply forloop etc 
+
+
+
+
+
