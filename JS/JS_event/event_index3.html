@@ -11,6 +11,7 @@
     <h1>Chai aur Javascript</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
+
 </body>
 <script>
     const start = document.querySelector('#start')
@@ -21,36 +22,24 @@
             console.log(str, Date.now());
         }
         // const intervalId = setInterval(sayDate, 1000, "hi")
-
+    let intervalId
 
     // start the process when user click on start
     start.addEventListener('click', function() {
-        const intervalId = setInterval(sayDate, 1000, "hi")
-            // hi.innerHTML = "start"
+        intervalId = setInterval(sayDate, 1000, "hi")
+        h1.innerHTML = "start the process, please check the console "
 
+    })
 
-        // stop the process
-        stops.addEventListener('click', function() {
-            clearTimeout(intervalId)
-            console.log("Stop the procces");
-
-        })
-
-
-
-
+    // stop the process
+    stops.addEventListener('click', function() {
+        clearTimeout(intervalId)
+        console.log("Stop the procces");
+        h1.innerHTML = "Stop the process"
 
     })
 
 
-    // stop changes
-
-
-
-    // function stopbtn(e) {
-
-
-    // }
 
 
 
