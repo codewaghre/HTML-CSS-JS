@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const settime = setTimeout(() => {
+    //     console.log("codewaghre");
+    //     document.querySelector('h1').innerHTML = "JacaScript Series part Event and Settimeout"
+    // }, 3000);
+
+    // how to time out  setTimeout
+    // clearTimeout(settime)
+
+    // setInterval(() => {
+    //     console.log("codewaghre");
+    // }, 1000);
+
+
+    // add setTimeout method and print anything also use cleartime out methon button
+
+
+
+    const h1 = document.querySelector('h1')
+
+    const changeText = function() {
+        h1.innerHTML = "JavaScript series part event , setTimeout, setInterval, clearTimeout"
+    }
+    const changeme = setTimeout(changeText, 5000)
+
+
+    // const btn = document.querySelector('#stop')
+
+
+    document.querySelector('#stop').addEventListener('click', function() {
+        clearTimeout(changeme)
+        console.log("Stope changme text");
+    })
+</script>
+
+</html>
